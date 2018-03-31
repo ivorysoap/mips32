@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 240 304)
+	(text "controller" (rect 40 72 84 84)(font "Arial" ))
+	(text "inst" (rect 1 223 18 235)(font "Arial" ))
+	(port
+		(pt 0 120)
+		(input)
+		(text "Opcode[5..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "Opcode[5..0]" (rect 21 115 84 127)(font "Arial" ))
+		(line (pt 0 120)(pt 16 120)(line_width 3))
+	)
+	(port
+		(pt 176 24)
+		(output)
+		(text "RegDst" (rect -24 0 13 12)(font "Arial" ))
+		(text "RegDst" (rect 88 16 125 28)(font "Arial" ))
+		(line (pt 176 24)(pt 128 24)(color 212 70 0))
+	)
+	(port
+		(pt 176 40)
+		(output)
+		(text "ALUSrc" (rect -24 0 13 12)(font "Arial" ))
+		(text "ALUSrc" (rect 104 32 141 44)(font "Arial" ))
+		(line (pt 176 40)(pt 136 40)(color 212 70 0))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "MemtoReg" (rect -24 0 29 12)(font "Arial" ))
+		(text "MemtoReg" (rect 104 56 157 68)(font "Arial" ))
+		(line (pt 176 64)(pt 152 64)(color 212 70 0))
+	)
+	(port
+		(pt 176 88)
+		(output)
+		(text "RegWrite" (rect -24 0 22 12)(font "Arial" ))
+		(text "RegWrite" (rect 117 83 163 95)(font "Arial" ))
+		(line (pt 176 88)(pt 160 88)(color 212 70 0))
+	)
+	(port
+		(pt 176 112)
+		(output)
+		(text "MemRead" (rect -24 0 25 12)(font "Arial" ))
+		(text "MemRead" (rect 114 107 163 119)(font "Arial" ))
+		(line (pt 176 112)(pt 160 112)(color 212 70 0))
+	)
+	(port
+		(pt 176 136)
+		(output)
+		(text "MemWrite" (rect -24 0 25 12)(font "Arial" ))
+		(text "MemWrite" (rect 114 131 163 143)(font "Arial" ))
+		(line (pt 176 136)(pt 160 136)(color 212 70 0))
+	)
+	(port
+		(pt 176 160)
+		(output)
+		(text "Branch" (rect -24 0 10 12)(font "Arial" ))
+		(text "Branch" (rect 120 152 154 164)(font "Arial" ))
+		(line (pt 176 160)(pt 152 160)(color 212 70 0))
+	)
+	(port
+		(pt 176 184)
+		(output)
+		(text "Jump" (rect -24 0 3 12)(font "Arial" ))
+		(text "Jump" (rect 120 176 147 188)(font "Arial" ))
+		(line (pt 176 184)(pt 144 184)(color 212 70 0))
+	)
+	(port
+		(pt 176 200)
+		(output)
+		(text "ALUOp[1..0]" (rect -24 0 37 12)(font "Arial" ))
+		(text "ALUOp[1..0]" (rect 80 192 141 204)(font "Arial" ))
+		(line (pt 176 200)(pt 136 200)(color 212 70 0)(line_width 3))
+	)
+	(drawing
+		(circle (rect 16 8 160 224)(color 212 70 0))
+	)
+)

@@ -1,0 +1,87 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 352 336)
+	(text "REGISTER_FILE" (rect 104 112 192 126)(font "Arial" (font_size 8)))
+	(text "inst" (rect 136 136 153 148)(font "Arial" ))
+	(port
+		(pt 0 208)
+		(input)
+		(text "WR_DATA[31..0]" (rect 0 0 96 14)(font "Arial" (font_size 8)))
+		(text "WR_DATA[31..0]" (rect 21 203 117 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RD_ADDR1[4..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "RD_ADDR1[4..0]" (rect 21 43 114 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "RD_ADDR2[4..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "RD_ADDR2[4..0]" (rect 21 83 114 97)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "WR_ADDR[4..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "WR_ADDR[4..0]" (rect 21 171 110 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 144 272)
+		(input)
+		(text "RegWrite" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "RegWrite" (rect 136 195 150 246)(font "Arial" (font_size 8))(vertical))
+		(line (pt 144 272)(pt 144 255))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 152 168 175 182)(font "Arial" (color 255 255 255)(font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 288 56)
+		(output)
+		(text "A[31..0]" (rect 96 0 140 14)(font "Arial" (font_size 8)))
+		(text "A[31..0]" (rect 223 51 267 65)(font "Arial" (font_size 8)))
+		(line (pt 288 56)(pt 272 56)(line_width 3))
+	)
+	(port
+		(pt 288 208)
+		(output)
+		(text "B[31..0]" (rect 96 0 139 14)(font "Arial" (font_size 8)))
+		(text "B[31..0]" (rect 224 203 267 217)(font "Arial" (font_size 8)))
+		(line (pt 288 208)(pt 272 208)(line_width 3))
+	)
+	(drawing
+		(line (pt 16 248)(pt 24 240))
+		(line (pt 24 240)(pt 16 232))
+		(rectangle (rect 16 16 272 256))
+	)
+)

@@ -1,0 +1,12 @@
+DEPTH = 256;
+WIDTH = 8;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+CONTENT
+BEGIN
+-- Default Memory Values
+[00..FF]: 00;
+-- Initial Values
+00: 55;
+01: AA;
+END;

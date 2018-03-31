@@ -1,0 +1,34 @@
+--IF/ID buffer for pipelined processor.
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity IFID is
+	port(	clk			  : in std_logic;
+			i_pcplus4 	  : in std_logic_vector(31 downto 0);
+			i_instruction : in std_logic_vector(31 downto 0);
+			o_pcplus4 	  : in std_logic_vector(31 downto 0);
+			o_instruction : in std_logic_vector(31 downto 0));
+end IFID;
+
+architecture structural of IFID is
+begin
+
+	--Concurrent Signal Assignment
+	vcc <= '1';
+	gnd <= '0';
+
+	--Component List
+	component reg32
+		port(	d 		: in std_logic_vector(31 downto 0);
+				en		: in std_logic;
+				clr	: in std_logic;
+				clk	: in std_logic;
+				q		: out std_logic_vector(31 downto 0));
+	end component;
+
+	--Port Map
+	pcreg  : reg32 port map(i_pcplus4, vcc, gnd, clk, o_pcplus4);
+	insreg : reg32 port map(i_instruction, vcc, gnd, clk, o_pcplus4);
+	
+end structural;

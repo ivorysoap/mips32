@@ -1,0 +1,16 @@
+DEPTH = 256;
+WIDTH = 32;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+CONTENT
+BEGIN
+-- Use no operations (nop) for default instructions
+[00..FF]: 00000000; -- nop(add $t1, $t1, $t1)
+-- Place MIPS instruction here
+00: 8C030001; --lw $3, 1($zero)
+01: 8C040001; --lw $4, 1($zero)
+02: 10640005; --beq $3, $4, 32
+03: 00000820; --add $1, $zero, $zero
+
+
+END;

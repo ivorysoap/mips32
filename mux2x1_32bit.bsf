@@ -1,0 +1,62 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 176 192)
+	(text "mux2x1_32bit" (rect 0 0 68 12)(font "Arial" ))
+	(text "inst" (rect 1 111 18 123)(font "Arial" ))
+	(port
+		(pt 56 128)
+		(input)
+		(text "s" (rect 8 16 13 28)(font "Arial" ))
+		(text "s" (rect 48 97 58 101)(font "Arial" (font_size 6))(vertical))
+		(line (pt 56 128)(pt 56 104))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "a[31..0]" (rect 0 8 37 20)(font "Arial" ))
+		(text "a[31..0]" (rect 24 40 52 50)(font "Arial" (font_size 6)))
+		(line (pt 0 40)(pt 24 40)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "b[31..0]" (rect 0 8 37 20)(font "Arial" ))
+		(text "b[31..0]" (rect 24 88 52 98)(font "Arial" (font_size 6)))
+		(line (pt 0 88)(pt 24 88)(line_width 3))
+	)
+	(port
+		(pt 112 64)
+		(output)
+		(text "m[31..0]" (rect -48 8 -7 20)(font "Arial" ))
+		(text "m[31..0]" (rect 57 59 87 69)(font "Arial" (font_size 6)))
+		(line (pt 112 64)(pt 88 64)(line_width 3))
+	)
+	(drawing
+		(text "0" (rect 32 32 39 46)(font "Arial" (font_size 8)))
+		(text "1" (rect 32 80 39 94)(font "Arial" (font_size 8)))
+		(line (pt 24 24)(pt 24 112))
+		(line (pt 24 112)(pt 88 104))
+		(line (pt 24 24)(pt 88 32))
+		(line (pt 88 32)(pt 88 104))
+	)
+)

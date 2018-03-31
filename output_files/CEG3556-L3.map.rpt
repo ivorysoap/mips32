@@ -1,0 +1,275 @@
+Analysis & Synthesis report for CEG3556-L3
+Fri Mar 30 20:48:44 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Fri Mar 30 20:48:44 2018               ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; CEG3556-L3                                      ;
+; Top-level Entity Name              ; CEG3556-L3                                      ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; CEG3556-L3         ; CEG3556-L3         ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Mar 30 20:48:41 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CEG3556-L3 -c CEG3556-L3
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file adder1bit.vhd
+    Info (12022): Found design unit 1: ADDER1BIT-structural
+    Info (12023): Found entity 1: ADDER1BIT
+Info (12021): Found 2 design units, including 1 entities, in source file zerocomp32.vhd
+    Info (12022): Found design unit 1: zerocomp32-structural
+    Info (12023): Found entity 1: zerocomp32
+Info (12021): Found 1 design units, including 1 entities, in source file top.bdf
+    Info (12023): Found entity 1: TOP
+Info (12021): Found 2 design units, including 1 entities, in source file sltextend.vhd
+    Info (12022): Found design unit 1: sltextend-structural
+    Info (12023): Found entity 1: sltextend
+Info (12021): Found 2 design units, including 1 entities, in source file signextend.vhd
+    Info (12022): Found design unit 1: signextend-structural
+    Info (12023): Found entity 1: signextend
+Info (12021): Found 2 design units, including 1 entities, in source file shl2extend.vhd
+    Info (12022): Found design unit 1: shl2extend-structural
+    Info (12023): Found entity 1: shl2extend
+Info (12021): Found 2 design units, including 1 entities, in source file shl2.vhd
+    Info (12022): Found design unit 1: shl2-structural
+    Info (12023): Found entity 1: shl2
+Info (12021): Found 2 design units, including 1 entities, in source file rom256x32.vhd
+    Info (12022): Found design unit 1: rom256x32-SYN
+    Info (12023): Found entity 1: ROM256x32
+Info (12021): Found 1 design units, including 1 entities, in source file register_file.bdf
+    Info (12023): Found entity 1: REGISTER_FILE
+Info (12021): Found 2 design units, including 1 entities, in source file regfile_component1.vhd
+    Info (12022): Found design unit 1: regfile_component1-SYN
+    Info (12023): Found entity 1: REGFILE_COMPONENT1
+Info (12021): Found 2 design units, including 1 entities, in source file reg32.vhd
+    Info (12022): Found design unit 1: reg32-behavioural
+    Info (12023): Found entity 1: reg32
+Info (12021): Found 2 design units, including 1 entities, in source file ram256x32.vhd
+    Info (12022): Found design unit 1: ram256x32-SYN
+    Info (12023): Found entity 1: RAM256x32
+Info (12021): Found 2 design units, including 1 entities, in source file or2_32bit.vhd
+    Info (12022): Found design unit 1: or2_32bit-structural
+    Info (12023): Found entity 1: or2_32bit
+Info (12021): Found 2 design units, including 1 entities, in source file not_32bit.vhd
+    Info (12022): Found design unit 1: not_32bit-structural
+    Info (12023): Found entity 1: not_32bit
+Info (12021): Found 2 design units, including 1 entities, in source file mux8x1_8bit.vhd
+    Info (12022): Found design unit 1: mux8x1_8bit-structural
+    Info (12023): Found entity 1: mux8x1_8bit
+Info (12021): Found 2 design units, including 1 entities, in source file mux8x1_1bit.vhd
+    Info (12022): Found design unit 1: mux8x1_1bit-structural
+    Info (12023): Found entity 1: mux8x1_1bit
+Info (12021): Found 2 design units, including 1 entities, in source file mux4x1_32bit.vhd
+    Info (12022): Found design unit 1: mux4x1_32bit-structural
+    Info (12023): Found entity 1: mux4x1_32bit
+Info (12021): Found 2 design units, including 1 entities, in source file mux4x1_1bit.vhd
+    Info (12022): Found design unit 1: mux4x1_1bit-structural
+    Info (12023): Found entity 1: mux4x1_1bit
+Info (12021): Found 2 design units, including 1 entities, in source file mux2x1_32bit.vhd
+    Info (12022): Found design unit 1: mux2x1_32bit-structural
+    Info (12023): Found entity 1: mux2x1_32bit
+Info (12021): Found 2 design units, including 1 entities, in source file mux2x1_5bit.vhd
+    Info (12022): Found design unit 1: mux2x1_5bit-structural
+    Info (12023): Found entity 1: mux2x1_5bit
+Info (12021): Found 2 design units, including 1 entities, in source file mux2x1_1bit.vhd
+    Info (12022): Found design unit 1: mux2x1_1bit-structural
+    Info (12023): Found entity 1: mux2x1_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file mips-alu.bdf
+    Info (12023): Found entity 1: MIPS-ALU
+Info (12021): Found 1 design units, including 1 entities, in source file mips_processor.bdf
+    Info (12023): Found entity 1: MIPS_PROCESSOR
+Info (12021): Found 2 design units, including 1 entities, in source file mips_alu_b.vhd
+    Info (12022): Found design unit 1: MIPS_ALU_B-behavioural
+    Info (12023): Found entity 1: MIPS_ALU_B
+Info (12021): Found 2 design units, including 1 entities, in source file mips_alu.vhd
+    Info (12022): Found design unit 1: MIPS_ALU-structural
+    Info (12023): Found entity 1: MIPS_ALU
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_constant1.vhd
+    Info (12022): Found design unit 1: lpm_constant1-SYN
+    Info (12023): Found entity 1: lpm_constant1
+Info (12021): Found 4 design units, including 2 entities, in source file lpm_constant0.vhd
+    Info (12022): Found design unit 1: lpm_constant0_lpm_constant_s09-RTL
+    Info (12022): Found design unit 2: lpm_constant0-RTL
+    Info (12023): Found entity 1: lpm_constant0_lpm_constant_s09
+    Info (12023): Found entity 2: lpm_constant0
+Info (12021): Found 2 design units, including 1 entities, in source file controller.vhd
+    Info (12022): Found design unit 1: controller-structural
+    Info (12023): Found entity 1: controller
+Info (12021): Found 2 design units, including 1 entities, in source file and2_32bit.vhd
+    Info (12022): Found design unit 1: and2_32bit-structural
+    Info (12023): Found entity 1: and2_32bit
+Info (12021): Found 2 design units, including 1 entities, in source file alu_controller.vhd
+    Info (12022): Found design unit 1: alu_controller-structural
+    Info (12023): Found entity 1: alu_controller
+Info (12021): Found 2 design units, including 1 entities, in source file adder32bits_b.vhd
+    Info (12022): Found design unit 1: ADDER32BITS_B-behv
+    Info (12023): Found entity 1: ADDER32BITS_B
+Info (12021): Found 2 design units, including 1 entities, in source file adder32bits.vhd
+    Info (12022): Found design unit 1: ADDER32BITS-rtl
+    Info (12023): Found entity 1: ADDER32BITS
+Info (12021): Found 2 design units, including 1 entities, in source file adder8bits.vhd
+    Info (12022): Found design unit 1: ADDER8BITS-rtl
+    Info (12023): Found entity 1: ADDER8BITS
+Info (12021): Found 2 design units, including 1 entities, in source file ifid.vhd
+    Info (12022): Found design unit 1: IFID-structural
+    Info (12023): Found entity 1: IFID
+Info (12021): Found 2 design units, including 1 entities, in source file idex.vhd
+    Info (12022): Found design unit 1: IDEX-structural
+    Info (12023): Found entity 1: IDEX
+Error (10482): VHDL error at IDEX.vhd(33): object "i_pcplus4" is used but not declared File: C:/Users/Ivor/Documents/mips32/IDEX.vhd Line: 33
+Error (10482): VHDL error at IDEX.vhd(33): object "o_pcplus4" is used but not declared File: C:/Users/Ivor/Documents/mips32/IDEX.vhd Line: 33
+Error (10558): VHDL error at IDEX.vhd(33): cannot associate formal port "q" of mode "out" with an expression File: C:/Users/Ivor/Documents/mips32/IDEX.vhd Line: 33
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
+    Error: Peak virtual memory: 484 megabytes
+    Error: Processing ended: Fri Mar 30 20:48:45 2018
+    Error: Elapsed time: 00:00:04
+    Error: Total CPU time (on all processors): 00:00:04
+
+
