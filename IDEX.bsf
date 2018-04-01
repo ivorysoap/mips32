@@ -229,7 +229,7 @@ applicable agreement for further details.
 	(drawing
 		(text "WB" (rect 48 32 68 46)(font "Arial" (color 255 170 0)(font_size 8)))
 		(text "M" (rect 48 104 57 118)(font "Arial" (color 255 170 0)(font_size 8)))
-		(text "WB" (rect 40 184 60 198)(font "Arial" (color 255 170 0)(font_size 8)))
+		(text "EX" (rect 40 184 55 198)(font "Arial" (color 255 170 0)(font_size 8)))
 		(line (pt 48 1328)(pt 56 1320))
 		(line (pt 56 1320)(pt 64 1328))
 		(rectangle (rect 24 16 80 1328))
