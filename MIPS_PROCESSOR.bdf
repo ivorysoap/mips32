@@ -255,7 +255,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 832 128 1120 400)
+	(rect 752 128 1040 400)
 	(text "REGISTER_FILE" (rect 104 112 192 126)(font "Arial" (font_size 8)))
 	(text "inst8" (rect 136 136 159 148)(font "Arial" ))
 	(port
@@ -1826,38 +1826,35 @@ applicable agreement for further details.
 		(line (pt 96 32)(pt 96 104))
 	)
 )
-(connector
-	(pt 808 288)
-	(pt 808 304)
-	(bus)
-)
-(connector
-	(pt 808 304)
-	(pt 832 304)
-	(bus)
-)
-(connector
-	(text "ReadData1[31..0]" (rect 1138 120 1225 132)(font "Arial" ))
-	(pt 1128 184)
-	(pt 1120 184)
-	(bus)
-)
-(connector
-	(text "Instruction[25..21]" (rect 568 160 657 172)(font "Arial" ))
-	(pt 568 176)
-	(pt 832 176)
-	(bus)
-)
-(connector
-	(pt 816 336)
-	(pt 832 336)
-	(bus)
-)
-(connector
-	(text "RegWrite" (rect 960 439 972 485)(font "Arial" )(vertical))
-	(pt 976 400)
-	(pt 976 488)
-	(color 212 77 0)
+(symbol
+	(rect 1056 224 1176 304)
+	(text "comp32" (rect 5 0 43 12)(font "Arial" ))
+	(text "inst15" (rect 8 64 37 76)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "b[31..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "b" (rect 21 43 26 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "a[31..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "a" (rect 21 27 26 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "same" (rect -32 0 -5 12)(font "Arial" ))
+		(text "same" (rect 77 27 104 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(drawing
+		(text "==" (rect 40 24 77 56)(font "Arial" (font_size 20)(bold)))
+		(rectangle (rect 16 16 104 64))
+	)
 )
 (connector
 	(pt 48 216)
@@ -2158,17 +2155,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Instruction[15..0]" (rect 602 480 685 492)(font "Arial" ))
-	(pt 752 496)
-	(pt 568 496)
-	(bus)
-)
-(connector
-	(pt 544 216)
-	(pt 568 216)
-	(bus)
-)
-(connector
 	(pt -296 200)
 	(pt -296 -944)
 	(bus)
@@ -2277,12 +2263,6 @@ applicable agreement for further details.
 	(color 212 70 0)
 )
 (connector
-	(text "Zero" (rect 1824 -469 1836 -447)(font "Arial" )(vertical))
-	(pt 1840 -576)
-	(pt 1840 -440)
-	(color 212 70 0)
-)
-(connector
 	(pt 1608 -680)
 	(pt 1608 -640)
 	(bus)
@@ -2291,38 +2271,6 @@ applicable agreement for further details.
 	(pt 1752 -640)
 	(pt 1752 -600)
 	(bus)
-)
-(connector
-	(text "WriteData[31..0]" (rect 800 329 812 410)(font "Arial" )(vertical))
-	(pt 816 336)
-	(pt 816 976)
-	(bus)
-)
-(connector
-	(text "Instruction[20..16]" (rect 568 200 657 212)(font "Arial" ))
-	(pt 568 216)
-	(pt 832 216)
-	(bus)
-)
-(connector
-	(pt 568 216)
-	(pt 568 496)
-	(bus)
-)
-(connector
-	(pt 784 368)
-	(pt 784 920)
-	(color 0 255 127)
-)
-(connector
-	(pt 504 368)
-	(pt 784 368)
-	(color 0 255 127)
-)
-(connector
-	(pt 784 368)
-	(pt 832 368)
-	(color 85 255 0)
 )
 (connector
 	(text "Instruction[31..0]" (rect 354 200 437 212)(font "Arial" ))
@@ -2356,16 +2304,6 @@ applicable agreement for further details.
 	(color 85 255 0)
 )
 (connector
-	(pt 1208 336)
-	(pt 1208 432)
-	(bus)
-)
-(connector
-	(pt 1120 336)
-	(pt 1208 336)
-	(bus)
-)
-(connector
 	(pt 1568 -824)
 	(pt 1568 -752)
 	(bus)
@@ -2389,16 +2327,6 @@ applicable agreement for further details.
 (connector
 	(pt 1568 -752)
 	(pt 1568 -704)
-	(bus)
-)
-(connector
-	(pt 752 504)
-	(pt 984 504)
-	(bus)
-)
-(connector
-	(pt 752 496)
-	(pt 752 504)
 	(bus)
 )
 (connector
@@ -2450,16 +2378,6 @@ applicable agreement for further details.
 	(pt 1280 808)
 	(pt 1280 920)
 	(color 0 255 127)
-)
-(connector
-	(pt 1128 184)
-	(pt 1128 136)
-	(bus)
-)
-(connector
-	(pt 1128 136)
-	(pt 1224 136)
-	(bus)
 )
 (connector
 	(text "ReadData2[31..0]" (rect 1120 320 1207 332)(font "Arial" ))
@@ -2713,11 +2631,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 784 920)
-	(pt 1280 920)
-	(color 0 255 127)
-)
-(connector
 	(pt 1832 224)
 	(pt 1848 224)
 	(bus)
@@ -2777,11 +2690,6 @@ applicable agreement for further details.
 	(pt 1704 528)
 	(pt 1848 528)
 	(bus)
-)
-(connector
-	(pt 1280 920)
-	(pt 1896 920)
-	(color 0 255 127)
 )
 (connector
 	(pt 1896 640)
@@ -2875,16 +2783,6 @@ applicable agreement for further details.
 (connector
 	(pt 2664 976)
 	(pt 2664 176)
-	(bus)
-)
-(connector
-	(pt 816 976)
-	(pt 1336 976)
-	(bus)
-)
-(connector
-	(pt 1336 976)
-	(pt 2664 976)
 	(bus)
 )
 (connector
@@ -3065,12 +2963,6 @@ applicable agreement for further details.
 	(text "DestinationRegister" (rect 2472 576 2581 590)(font "Arial" (font_size 8)))
 	(pt 2464 592)
 	(pt 2552 592)
-	(bus)
-)
-(connector
-	(text "DestinationRegister" (rect 705 272 814 286)(font "Arial" (font_size 8)))
-	(pt 760 288)
-	(pt 808 288)
 	(bus)
 )
 (connector
@@ -3363,16 +3255,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 568 -296)
-	(pt 568 176)
-	(bus)
-)
-(connector
-	(pt 568 176)
-	(pt 568 216)
-	(bus)
-)
-(connector
 	(pt 784 -272)
 	(pt 800 -272)
 	(bus)
@@ -3486,6 +3368,175 @@ applicable agreement for further details.
 	(pt 448 416)
 	(pt 448 528)
 )
+(connector
+	(text "Instruction[15..0]" (rect 602 488 685 500)(font "Arial" ))
+	(pt 568 504)
+	(pt 984 504)
+	(bus)
+)
+(connector
+	(pt 712 368)
+	(pt 712 920)
+	(color 0 255 127)
+)
+(connector
+	(pt 712 920)
+	(pt 1280 920)
+	(color 0 255 127)
+)
+(connector
+	(pt 1280 920)
+	(pt 1896 920)
+	(color 0 255 127)
+)
+(connector
+	(pt 736 976)
+	(pt 1336 976)
+	(bus)
+)
+(connector
+	(pt 1336 976)
+	(pt 2664 976)
+	(bus)
+)
+(connector
+	(text "Instruction[25..21]" (rect 672 160 761 172)(font "Arial" ))
+	(pt 568 176)
+	(pt 752 176)
+	(bus)
+)
+(connector
+	(text "RegWrite" (rect 880 439 892 485)(font "Arial" )(vertical))
+	(pt 896 400)
+	(pt 896 488)
+	(color 212 77 0)
+)
+(connector
+	(pt 1208 432)
+	(pt 1208 336)
+	(bus)
+)
+(connector
+	(pt 736 336)
+	(pt 752 336)
+	(bus)
+)
+(connector
+	(text "WriteData[31..0]" (rect 720 337 732 418)(font "Arial" )(vertical))
+	(pt 736 976)
+	(pt 736 336)
+	(bus)
+)
+(connector
+	(pt 568 -296)
+	(pt 568 176)
+	(bus)
+)
+(connector
+	(pt 568 176)
+	(pt 568 216)
+	(bus)
+)
+(connector
+	(text "Instruction[20..16]" (rect 672 200 761 212)(font "Arial" ))
+	(pt 544 216)
+	(pt 568 216)
+	(bus)
+)
+(connector
+	(pt 568 216)
+	(pt 752 216)
+	(bus)
+)
+(connector
+	(pt 504 368)
+	(pt 712 368)
+	(color 0 255 127)
+)
+(connector
+	(pt 712 368)
+	(pt 752 368)
+	(color 0 255 127)
+)
+(connector
+	(pt 568 216)
+	(pt 568 504)
+	(bus)
+)
+(connector
+	(text "DestinationRegister" (rect 633 288 742 302)(font "Arial" (font_size 8)))
+	(pt 632 304)
+	(pt 752 304)
+	(bus)
+)
+(connector
+	(pt 1224 136)
+	(pt 1208 136)
+	(bus)
+)
+(connector
+	(pt 1208 136)
+	(pt 1208 184)
+	(bus)
+)
+(connector
+	(pt 1056 256)
+	(pt 1048 256)
+	(bus)
+)
+(connector
+	(pt 1048 256)
+	(pt 1048 184)
+	(bus)
+)
+(connector
+	(pt 1040 184)
+	(pt 1048 184)
+	(bus)
+)
+(connector
+	(text "ReadData1[31..0]" (rect 1122 168 1209 180)(font "Arial" ))
+	(pt 1048 184)
+	(pt 1208 184)
+	(bus)
+)
+(connector
+	(pt 1048 336)
+	(pt 1048 272)
+	(bus)
+)
+(connector
+	(pt 1040 336)
+	(pt 1048 336)
+	(bus)
+)
+(connector
+	(pt 1048 336)
+	(pt 1208 336)
+	(bus)
+)
+(connector
+	(pt 1048 272)
+	(pt 1056 272)
+	(bus)
+)
+(connector
+	(text "ParamsEqual" (rect 1824 -517 1836 -453)(font "Arial" )(vertical))
+	(pt 1840 -576)
+	(pt 1840 -440)
+	(color 212 70 0)
+)
+(connector
+	(pt 1176 256)
+	(pt 1200 256)
+	(color 212 70 0)
+)
+(connector
+	(text "ParamsEqual" (rect 1184 192 1196 256)(font "Arial" )(vertical))
+	(pt 1200 256)
+	(pt 1200 224)
+	(color 212 70 0)
+)
 (junction (pt 568 176))
 (junction (pt 568 216))
 (junction (pt 48 216))
@@ -3496,7 +3547,6 @@ applicable agreement for further details.
 (junction (pt 2024 1208))
 (junction (pt 2024 1224))
 (junction (pt 1568 -752))
-(junction (pt 784 368))
 (junction (pt 464 432))
 (junction (pt 1384 528))
 (junction (pt 1280 920))
@@ -3510,11 +3560,14 @@ applicable agreement for further details.
 (junction (pt 1336 40))
 (junction (pt 1344 72))
 (junction (pt 1496 72))
+(junction (pt 712 368))
+(junction (pt 1048 184))
+(junction (pt 1048 336))
 (text "opcode" (rect 584 -328 626 -314)(font "Arial" (font_size 8)))
-(text "rs" (rect 664 160 675 174)(font "Arial" (font_size 8)))
-(text "rt" (rect 664 200 672 214)(font "Arial" (font_size 8)))
+(text "rs" (rect 648 160 659 174)(font "Arial" (font_size 8)))
+(text "rt" (rect 648 200 656 214)(font "Arial" (font_size 8)))
 (text "funct" (rect 1392 768 1421 782)(font "Arial" (font_size 8)))
-(text "offset" (rect 680 480 714 494)(font "Arial" (font_size 8)))
+(text "offset" (rect 608 472 642 486)(font "Arial" (font_size 8)))
 (text "Jmp. Address" (rect 1256 -896 1335 -882)(font "Arial" (font_size 8)))
 (text "rt" (rect 1144 616 1152 630)(font "Arial" (font_size 8)))
 (text "rd" (rect 1144 688 1155 702)(font "Arial" (font_size 8)))

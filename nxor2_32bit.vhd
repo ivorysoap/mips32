@@ -1,5 +1,4 @@
 --32-bit NXOR gate.
---Suitable for use as a 32-bit comparator.
 
 library ieee;
 use ieee.std_logic_1164.all;
