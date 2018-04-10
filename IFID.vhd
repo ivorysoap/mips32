@@ -5,6 +5,8 @@ use ieee.std_logic_1164.all;
 
 entity IFID is
 	port(	clk			  : in std_logic;
+			en				  : in std_logic;
+			flush			  : in std_logic;
 			i_pc4		 	  : in std_logic_vector(31 downto 0);
 			i_ins			  : in std_logic_vector(31 downto 0);
 			o_pc4 		  : out std_logic_vector(31 downto 0);
@@ -25,12 +27,9 @@ signal vcc, gnd : std_logic;
 
 begin
 
-	--Concurrent Signal Assignment
-	vcc <= '1';
-	gnd <= '0';
 
 	--Port Map
-	pcreg  : reg32 port map(i_pc4, vcc, gnd, clk, o_pc4);
-	insreg : reg32 port map(i_ins, vcc, gnd, clk, o_pc4);
+	pcreg  : reg32 port map(i_pc4, en, flush, clk, o_pc4);
+	insreg : reg32 port map(i_ins, en, flush, clk, o_pc4);
 	
 end structural;

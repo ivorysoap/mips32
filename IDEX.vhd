@@ -5,6 +5,7 @@ use ieee.std_logic_1164.all;
 
 entity IDEX is
 	port(	clk			  : in std_logic;
+			flush			  : in std_logic;
 			--WB Controlpath Signals
 			i_RegWrite	  : in std_logic;
 			i_MemtoReg	  : in std_logic;

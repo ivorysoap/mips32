@@ -19,14 +19,18 @@ entity EXM is
 			o_Branch		  : out std_logic;
 						
 			--Datapath Signals
-			i_aluresult	  : in std_logic_vector(31 downto 0);
-			i_aluzero	  : in std_logic;
-			i_writedata	  : in std_logic_vector(31 downto 0);
-			i_destreg	  : in std_logic_vector(4 downto 0);
-			o_aluresult	  : out std_logic_vector(31 downto 0);
-			o_aluzero	  : out std_logic;
-			o_writedata	  : out std_logic_vector(31 downto 0);
-			o_destreg	  : out std_logic_vector(4 downto 0));
+			i_pc4			  : in std_logic_vector(31 downto 0);
+			i_a		 	  : in std_logic_vector(31 downto 0);
+			i_b		 	  : in std_logic_vector(31 downto 0);
+			i_signext	  : in std_logic_vector(31 downto 0);
+			i_rt			  : in std_logic_vector(4 downto 0);
+			i_rd			  : in std_logic_vector(4 downto 0);
+			o_pc4			  : out std_logic_vector(31 downto 0);
+			o_a 	 		  : out std_logic_vector(31 downto 0);
+			o_b 	 		  : out std_logic_vector(31 downto 0);
+			o_signext	  : out std_logic_vector(31 downto 0);
+			o_rt			  : out std_logic_vector(4 downto 0);
+			o_rd			  : out std_logic_vector(4 downto 0));
 end EXM;
 
 architecture behavioural of EXM is
@@ -45,11 +49,18 @@ begin
 			o_MemRead <= i_MemRead;
 			o_Branch <= i_Branch;
 			
+			--EX
+			o_RegDst <= i_RegDst;
+			o_ALUOp <= i_ALUOp;
+			o_ALUSrc <= i_ALUSrc;
+			
 			--Datapath
-			o_aluresult <= i_aluresult;
-			o_aluzero <= i_aluzero;
-			o_writedata <= i_writedata;
-			o_destreg <= i_destreg;
+			o_pc4 <= i_pc4;
+			o_a <= i_a;
+			o_b <= i_b;
+			o_signext <= i_signext;
+			o_rt <= i_rt;
+			o_rd <= i_rd;
 		end if;
 	end process;
 	
