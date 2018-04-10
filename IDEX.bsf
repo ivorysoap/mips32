@@ -94,14 +94,6 @@ applicable agreement for further details.
 		(line (pt 0 224)(pt 16 224))
 	)
 	(port
-		(pt 0 336)
-		(input)
-		(text "i_pc4[31..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "." (rect 21 331 24 343)(font "Arial" ))
-		(line (pt 0 336)(pt 16 336)(line_width 3))
-		(unused)
-	)
-	(port
 		(pt 0 664)
 		(input)
 		(text "i_a[31..0]" (rect 0 0 46 12)(font "Arial" ))
@@ -135,6 +127,13 @@ applicable agreement for further details.
 		(text "i_rd[4..0]" (rect 0 0 43 12)(font "Arial" ))
 		(text "rd[4..0]" (rect 32 1216 67 1228)(font "Arial" ))
 		(line (pt 0 1224)(pt 16 1224)(line_width 3))
+	)
+	(port
+		(pt 0 1096)
+		(input)
+		(text "i_pc4[31..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "rs[4..0]" (rect 32 1088 67 1100)(font "Arial" ))
+		(line (pt 0 1096)(pt 16 1096)(line_width 3))
 	)
 	(port
 		(pt 96 64)
@@ -193,14 +192,6 @@ applicable agreement for further details.
 		(line (pt 96 224)(pt 80 224))
 	)
 	(port
-		(pt 96 336)
-		(output)
-		(text "o_pc4[31..0]" (rect -128 0 -67 12)(font "Arial" ))
-		(text "." (rect 24 331 27 343)(font "Arial" ))
-		(line (pt 96 336)(pt 80 336)(line_width 3))
-		(unused)
-	)
-	(port
 		(pt 96 960)
 		(output)
 		(text "o_b[31..0]" (rect -128 0 -79 12)(font "Arial" ))
@@ -234,6 +225,13 @@ applicable agreement for further details.
 		(text "o_a[31..0]" (rect -128 0 -79 12)(font "Arial" ))
 		(text "." (rect 34 659 37 671)(font "Arial" ))
 		(line (pt 96 664)(pt 80 664)(line_width 3))
+	)
+	(port
+		(pt 96 1096)
+		(output)
+		(text "o_pc4[31..0]" (rect -128 0 -67 12)(font "Arial" ))
+		(text "." (rect 24 1091 27 1103)(font "Arial" ))
+		(line (pt 96 1096)(pt 80 1096)(line_width 3))
 	)
 	(drawing
 		(text "WB" (rect 32 39 52 53)(font "Arial" (color 255 170 0)(font_size 8)))

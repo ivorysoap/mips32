@@ -1,0 +1,17 @@
+--32-bit NXOR gate.
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity nxor2_32bit is
+	port(	a : in std_logic;
+			b : in std_logic;
+			o : out std_logic);
+			
+architecture structural of nxor2_32bit is
+begin
+
+	--Output Driver
+	o <= not(a xor b);
+
+end structural;

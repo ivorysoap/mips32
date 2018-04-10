@@ -1,0 +1,33 @@
+--Forwarding unit for MIPS pipelined processor.
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ForwardingUnit is
+	port( 
+			--Datapath Inputs
+			EXM.rd			: in std_logic;
+			MWB.rd			: in std_logic;
+			IDEX.rs			: in std_logic;
+			IDEX.rt			: in std_logic;
+			
+			--Controlpath Inputs
+			EXM.RegWrite	: in std_logic;
+			MWB.RegWrite	: in std_logic;
+			
+			ForwardA			: out std_logic_vector(1 downto 0);
+			ForwardB			: out std_logic_vector(1 downto 0));
+
+architecture structural of ForwardingUnit is
+
+component nxor2_5bit
+	port(	a : in std_logic_vector(4 downto 0);
+			b : in std_logic_vector(4 downto 0);
+			o : out std_logic_vector(4 downto 0));
+end component;
+
+component zerocomp5
+	port ( a		: in std_logic_vector(4 downto 0);
+			 zero	: out std_logic);
+end component;
+
