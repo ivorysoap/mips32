@@ -1,0 +1,9 @@
+INTENDED_DEVICE_FAMILY="Cyclone IV E"
+PIPELINE=3
+WIDTH_EXP=8
+WIDTH_MAN=23
+DEVICE_FAMILY="Cyclone IV E"
+clock
+dataa
+datab
+aeb

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CEG3556-L3
-Fri Mar 30 20:48:44 2018
+Wed Apr 11 11:06:46 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,24 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis IP Cores Summary
+  6. Source assignments for MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component|altsyncram_d7b1:auto_generated
+  7. Source assignments for MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component|altsyncram_2fn1:auto_generated
+  8. Source assignments for MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst1|altsyncram:altsyncram_component|altsyncram_2fn1:auto_generated
+  9. Source assignments for MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component|altsyncram_a6i1:auto_generated
+ 10. Parameter Settings for User Entity Instance: MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component
+ 11. Parameter Settings for User Entity Instance: MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component
+ 12. Parameter Settings for User Entity Instance: MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst1|altsyncram:altsyncram_component
+ 13. Parameter Settings for User Entity Instance: MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component
+ 14. Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|mux4x1_2bit:fwdBmux"
+ 15. Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|mux4x1_2bit:fwdAmux"
+ 16. Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|zerocomp5:nonzero2"
+ 17. Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|zerocomp5:nonzero1"
+ 18. Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|comp5:comparator4"
+ 19. Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|comp5:comparator3"
+ 20. Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|comp5:comparator2"
+ 21. Port Connectivity Checks: "MIPS_PROCESSOR:inst|MIPS_ALU:inst|ADDER32BITS_B:incrementor"
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -36,10 +53,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Mar 30 20:48:44 2018               ;
+; Analysis & Synthesis Status        ; Failed - Wed Apr 11 11:06:46 2018               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CEG3556-L3                                      ;
-; Top-level Entity Name              ; CEG3556-L3                                      ;
+; Top-level Entity Name              ; TOP                                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Total logic elements               ; N/A until Partition Merge                       ;
 ;     Total combinational functions  ; N/A until Partition Merge                       ;
@@ -59,7 +76,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; CEG3556-L3         ; CEG3556-L3         ;
+; Top-level entity name                                                      ; TOP                ; CEG3556-L3         ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,13 +168,394 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                         ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------+-------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                       ; IP Include File                                       ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------+-------------------------------------------------------+
+; Altera ; LPM_CONSTANT ; N/A     ; N/A          ; N/A          ; |TOP|MIPS_PROCESSOR:inst|lpm_constant0:inst2                          ; C:/Users/Ivor/Documents/mips32/lpm_constant0.vhd      ;
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |TOP|MIPS_PROCESSOR:inst|RAM256x32:inst5                              ; C:/Users/Ivor/Documents/mips32/RAM256x32.vhd          ;
+; Altera ; RAM: 2-PORT  ; N/A     ; N/A          ; N/A          ; |TOP|MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst  ; C:/Users/Ivor/Documents/mips32/REGFILE_COMPONENT1.vhd ;
+; Altera ; RAM: 2-PORT  ; N/A     ; N/A          ; N/A          ; |TOP|MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst1 ; C:/Users/Ivor/Documents/mips32/REGFILE_COMPONENT1.vhd ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |TOP|MIPS_PROCESSOR:inst|lpm_constant2:inst16                         ; C:/Users/Ivor/Documents/mips32/lpm_constant2.vhd      ;
+; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |TOP|MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY                 ; C:/Users/Ivor/Documents/mips32/ROM256x32.vhd          ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------+-------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component|altsyncram_d7b1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                       ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                        ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component|altsyncram_2fn1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                      ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                       ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst1|altsyncram:altsyncram_component|altsyncram_2fn1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                       ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                        ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component|altsyncram_a6i1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                          ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                           ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component ;
++------------------------------------+--------------------------------+---------------------------------------------------------+
+; Parameter Name                     ; Value                          ; Type                                                    ;
++------------------------------------+--------------------------------+---------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                              ; Untyped                                                 ;
+; AUTO_CARRY_CHAINS                  ; ON                             ; AUTO_CARRY                                              ;
+; IGNORE_CARRY_BUFFERS               ; OFF                            ; IGNORE_CARRY                                            ;
+; AUTO_CASCADE_CHAINS                ; ON                             ; AUTO_CASCADE                                            ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                            ; IGNORE_CASCADE                                          ;
+; WIDTH_BYTEENA                      ; 1                              ; Untyped                                                 ;
+; OPERATION_MODE                     ; ROM                            ; Untyped                                                 ;
+; WIDTH_A                            ; 32                             ; Signed Integer                                          ;
+; WIDTHAD_A                          ; 8                              ; Signed Integer                                          ;
+; NUMWORDS_A                         ; 256                            ; Signed Integer                                          ;
+; OUTDATA_REG_A                      ; CLOCK0                         ; Untyped                                                 ;
+; ADDRESS_ACLR_A                     ; NONE                           ; Untyped                                                 ;
+; OUTDATA_ACLR_A                     ; NONE                           ; Untyped                                                 ;
+; WRCONTROL_ACLR_A                   ; NONE                           ; Untyped                                                 ;
+; INDATA_ACLR_A                      ; NONE                           ; Untyped                                                 ;
+; BYTEENA_ACLR_A                     ; NONE                           ; Untyped                                                 ;
+; WIDTH_B                            ; 1                              ; Untyped                                                 ;
+; WIDTHAD_B                          ; 1                              ; Untyped                                                 ;
+; NUMWORDS_B                         ; 1                              ; Untyped                                                 ;
+; INDATA_REG_B                       ; CLOCK1                         ; Untyped                                                 ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                         ; Untyped                                                 ;
+; RDCONTROL_REG_B                    ; CLOCK1                         ; Untyped                                                 ;
+; ADDRESS_REG_B                      ; CLOCK1                         ; Untyped                                                 ;
+; OUTDATA_REG_B                      ; UNREGISTERED                   ; Untyped                                                 ;
+; BYTEENA_REG_B                      ; CLOCK1                         ; Untyped                                                 ;
+; INDATA_ACLR_B                      ; NONE                           ; Untyped                                                 ;
+; WRCONTROL_ACLR_B                   ; NONE                           ; Untyped                                                 ;
+; ADDRESS_ACLR_B                     ; NONE                           ; Untyped                                                 ;
+; OUTDATA_ACLR_B                     ; NONE                           ; Untyped                                                 ;
+; RDCONTROL_ACLR_B                   ; NONE                           ; Untyped                                                 ;
+; BYTEENA_ACLR_B                     ; NONE                           ; Untyped                                                 ;
+; WIDTH_BYTEENA_A                    ; 1                              ; Signed Integer                                          ;
+; WIDTH_BYTEENA_B                    ; 1                              ; Untyped                                                 ;
+; RAM_BLOCK_TYPE                     ; AUTO                           ; Untyped                                                 ;
+; BYTE_SIZE                          ; 8                              ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                      ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ           ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ           ; Untyped                                                 ;
+; INIT_FILE                          ; ROM_CONTENTS -TEST PROGRAM.mif ; Untyped                                                 ;
+; INIT_FILE_LAYOUT                   ; PORT_A                         ; Untyped                                                 ;
+; MAXIMUM_DEPTH                      ; 0                              ; Untyped                                                 ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                         ; Untyped                                                 ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                         ; Untyped                                                 ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                         ; Untyped                                                 ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                         ; Untyped                                                 ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                ; Untyped                                                 ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                ; Untyped                                                 ;
+; ENABLE_ECC                         ; FALSE                          ; Untyped                                                 ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                          ; Untyped                                                 ;
+; WIDTH_ECCSTATUS                    ; 3                              ; Untyped                                                 ;
+; DEVICE_FAMILY                      ; Cyclone IV E                   ; Untyped                                                 ;
+; CBXI_PARAMETER                     ; altsyncram_d7b1                ; Untyped                                                 ;
++------------------------------------+--------------------------------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                             ;
++------------------------------------+----------------------+----------------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                                          ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                                       ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                                     ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                                     ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                                   ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                          ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                                          ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                                                   ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                                                                   ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                                                                   ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                          ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                                          ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                                          ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                          ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                          ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                          ;
+; WIDTH_B                            ; 32                   ; Signed Integer                                                                   ;
+; WIDTHAD_B                          ; 5                    ; Signed Integer                                                                   ;
+; NUMWORDS_B                         ; 32                   ; Signed Integer                                                                   ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                          ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                                          ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                                          ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                                          ;
+; OUTDATA_REG_B                      ; CLOCK0               ; Untyped                                                                          ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                                          ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                                          ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                          ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                                          ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                                          ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                          ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                                          ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                                   ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                                          ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                                          ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                                          ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                                          ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                          ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                          ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                                          ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                                          ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                                          ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                                          ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                                          ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                                          ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                                          ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                                          ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                                          ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                                          ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                          ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                          ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                                          ;
+; CBXI_PARAMETER                     ; altsyncram_2fn1      ; Untyped                                                                          ;
++------------------------------------+----------------------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst1|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                              ;
++------------------------------------+----------------------+-----------------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                                           ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                                        ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                                      ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                                      ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                                    ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                           ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                                           ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                                                    ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                                                                    ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                                                                    ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                           ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                                           ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                                           ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                           ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                           ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                           ;
+; WIDTH_B                            ; 32                   ; Signed Integer                                                                    ;
+; WIDTHAD_B                          ; 5                    ; Signed Integer                                                                    ;
+; NUMWORDS_B                         ; 32                   ; Signed Integer                                                                    ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                           ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                                           ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                                           ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                                           ;
+; OUTDATA_REG_B                      ; CLOCK0               ; Untyped                                                                           ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                                           ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                                           ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                           ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                                           ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                                           ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                           ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                                           ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                                    ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                                           ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                                           ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                                           ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                                           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                           ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                                           ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                                           ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                                           ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                                           ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                                           ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                                           ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                                           ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                                           ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                                           ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                                           ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                           ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                           ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                                           ;
+; CBXI_PARAMETER                     ; altsyncram_2fn1      ; Untyped                                                                           ;
++------------------------------------+----------------------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                 ;
++------------------------------------+----------------------+------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                              ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                       ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                              ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                              ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                       ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                                       ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                                       ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                              ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                              ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                              ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                              ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                              ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                              ;
+; WIDTH_B                            ; 1                    ; Untyped                                              ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                              ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                              ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                              ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                              ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                              ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                              ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                              ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                              ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                              ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                              ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                              ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                              ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                              ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                              ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                       ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                              ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                              ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                              ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
+; INIT_FILE                          ; RAM_CONTENTS.mif     ; Untyped                                              ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                              ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                              ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                              ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                              ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                              ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                              ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                              ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                              ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                              ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                              ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                              ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                              ;
+; CBXI_PARAMETER                     ; altsyncram_a6i1      ; Untyped                                              ;
++------------------------------------+----------------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|mux4x1_2bit:fwdBmux" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                    ;
+; b[1] ; Input ; Info     ; Stuck at GND                                                    ;
+; b[0] ; Input ; Info     ; Stuck at VCC                                                    ;
+; c[1] ; Input ; Info     ; Stuck at VCC                                                    ;
+; c[0] ; Input ; Info     ; Stuck at GND                                                    ;
+; d[1] ; Input ; Info     ; Stuck at VCC                                                    ;
+; d[0] ; Input ; Info     ; Stuck at GND                                                    ;
+; s    ; Input ; Info     ; Stuck at GND                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|mux4x1_2bit:fwdAmux" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                    ;
+; b[1] ; Input ; Info     ; Stuck at GND                                                    ;
+; b[0] ; Input ; Info     ; Stuck at VCC                                                    ;
+; c[1] ; Input ; Info     ; Stuck at VCC                                                    ;
+; c[0] ; Input ; Info     ; Stuck at GND                                                    ;
+; d[1] ; Input ; Info     ; Stuck at VCC                                                    ;
+; d[0] ; Input ; Info     ; Stuck at GND                                                    ;
+; s    ; Input ; Info     ; Stuck at GND                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|zerocomp5:nonzero2"                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; zero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|zerocomp5:nonzero1"                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; zero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|comp5:comparator4"                                                       ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity         ; Details                                                                                             ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; comp_output ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Input" but port on entity declared as "Output" ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|comp5:comparator3"                                                       ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity         ; Details                                                                                             ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; comp_output ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Input" but port on entity declared as "Output" ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|comp5:comparator2"                                                       ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity         ; Details                                                                                             ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; comp_output ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Input" but port on entity declared as "Output" ;
++-------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIPS_PROCESSOR:inst|MIPS_ALU:inst|ADDER32BITS_B:incrementor" ;
++----------+-------+----------+-----------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                   ;
++----------+-------+----------+-----------------------------------------------------------+
+; b[31..1] ; Input ; Info     ; Stuck at GND                                              ;
+; b[0]     ; Input ; Info     ; Stuck at VCC                                              ;
++----------+-------+----------+-----------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Mar 30 20:48:41 2018
+    Info: Processing started: Wed Apr 11 11:06:38 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CEG3556-L3 -c CEG3556-L3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file adder1bit.vhd
@@ -261,15 +659,185 @@ Info (12021): Found 2 design units, including 1 entities, in source file ifid.vh
     Info (12022): Found design unit 1: IFID-structural
     Info (12023): Found entity 1: IFID
 Info (12021): Found 2 design units, including 1 entities, in source file idex.vhd
-    Info (12022): Found design unit 1: IDEX-structural
+    Info (12022): Found design unit 1: IDEX-behavioural
     Info (12023): Found entity 1: IDEX
-Error (10482): VHDL error at IDEX.vhd(33): object "i_pcplus4" is used but not declared File: C:/Users/Ivor/Documents/mips32/IDEX.vhd Line: 33
-Error (10482): VHDL error at IDEX.vhd(33): object "o_pcplus4" is used but not declared File: C:/Users/Ivor/Documents/mips32/IDEX.vhd Line: 33
-Error (10558): VHDL error at IDEX.vhd(33): cannot associate formal port "q" of mode "out" with an expression File: C:/Users/Ivor/Documents/mips32/IDEX.vhd Line: 33
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
-    Error: Peak virtual memory: 484 megabytes
-    Error: Processing ended: Fri Mar 30 20:48:45 2018
-    Error: Elapsed time: 00:00:04
-    Error: Total CPU time (on all processors): 00:00:04
+Info (12021): Found 2 design units, including 1 entities, in source file exm.vhd
+    Info (12022): Found design unit 1: EXM-behavioural
+    Info (12023): Found entity 1: EXM
+Info (12021): Found 2 design units, including 1 entities, in source file mwb.vhd
+    Info (12022): Found design unit 1: MWB-behavioural
+    Info (12023): Found entity 1: MWB
+Info (12021): Found 2 design units, including 1 entities, in source file nxor2_5bit.vhd
+    Info (12022): Found design unit 1: nxor2_5bit-structural
+    Info (12023): Found entity 1: nxor2_5bit
+Info (12021): Found 2 design units, including 1 entities, in source file zerocomp5.vhd
+    Info (12022): Found design unit 1: zerocomp5-structural
+    Info (12023): Found entity 1: zerocomp5
+Info (12021): Found 2 design units, including 1 entities, in source file mux4x1_2bit.vhd
+    Info (12022): Found design unit 1: mux4x1_2bit-structural
+    Info (12023): Found entity 1: mux4x1_2bit
+Info (12021): Found 2 design units, including 1 entities, in source file forwardingunit.vhd
+    Info (12022): Found design unit 1: ForwardingUnit-structural
+    Info (12023): Found entity 1: ForwardingUnit
+Info (12021): Found 2 design units, including 1 entities, in source file comp5.vhd
+    Info (12022): Found design unit 1: comp5-structural
+    Info (12023): Found entity 1: comp5
+Info (12021): Found 2 design units, including 1 entities, in source file comp32.vhd
+    Info (12022): Found design unit 1: comp32-structural
+    Info (12023): Found entity 1: comp32
+Info (12021): Found 2 design units, including 1 entities, in source file nxor2_32bit.vhd
+    Info (12022): Found design unit 1: nxor2_32bit-structural
+    Info (12023): Found entity 1: nxor2_32bit
+Info (12021): Found 4 design units, including 2 entities, in source file lpm_constant2.vhd
+    Info (12022): Found design unit 1: lpm_constant2_lpm_constant_r09-RTL
+    Info (12022): Found design unit 2: lpm_constant2-RTL
+    Info (12023): Found entity 1: lpm_constant2_lpm_constant_r09
+    Info (12023): Found entity 2: lpm_constant2
+Info (12021): Found 2 design units, including 1 entities, in source file mux2x1_6bit.vhd
+    Info (12022): Found design unit 1: mux2x1_6bit-structural
+    Info (12023): Found entity 1: mux2x1_6bit
+Info (12021): Found 2 design units, including 1 entities, in source file hazarddetectionunit.vhd
+    Info (12022): Found design unit 1: HazardDetectionUnit-structural
+    Info (12023): Found entity 1: HazardDetectionUnit
+Info (12127): Elaborating entity "TOP" for the top level hierarchy
+Info (12128): Elaborating entity "MIPS_PROCESSOR" for hierarchy "MIPS_PROCESSOR:inst"
+Warning (275085): Found inconsistent dimensions for element "DestinationRegister"
+Warning (275085): Found inconsistent dimensions for element "pld_rs"
+Warning (275085): Found inconsistent dimensions for element "zero32"
+Warning (275080): Converted elements in bus name "DestinationRegister" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "DestinationRegister[4..0]" to "DestinationRegister4..0"
+    Warning (275081): Converted element name(s) from "DestinationRegister[4..0]" to "DestinationRegister4..0"
+Warning (275080): Converted elements in bus name "pld_rs" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "pld_rs[4..0]" to "pld_rs4..0"
+Warning (275080): Converted elements in bus name "zero32" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "zero32[26..0]" to "zero3226..0"
+    Warning (275081): Converted element name(s) from "zero32[5..0]" to "zero325..0"
+Warning (275009): Pin "GReset" not connected
+Warning (275008): Primitive "VCC" of instance "VccSignal" not used
+Info (12128): Elaborating entity "MWB" for hierarchy "MIPS_PROCESSOR:inst|MWB:inst19"
+Info (12128): Elaborating entity "EXM" for hierarchy "MIPS_PROCESSOR:inst|EXM:EX/M"
+Info (12128): Elaborating entity "IDEX" for hierarchy "MIPS_PROCESSOR:inst|IDEX:inst11"
+Info (12128): Elaborating entity "controller" for hierarchy "MIPS_PROCESSOR:inst|controller:inst7"
+Info (12128): Elaborating entity "mux2x1_6bit" for hierarchy "MIPS_PROCESSOR:inst|mux2x1_6bit:inst17"
+Info (12128): Elaborating entity "mux2x1_1bit" for hierarchy "MIPS_PROCESSOR:inst|mux2x1_6bit:inst17|mux2x1_1bit:mux5"
+Info (12128): Elaborating entity "HazardDetectionUnit" for hierarchy "MIPS_PROCESSOR:inst|HazardDetectionUnit:inst24"
+Info (12128): Elaborating entity "comp5" for hierarchy "MIPS_PROCESSOR:inst|HazardDetectionUnit:inst24|comp5:comparator1"
+Info (12128): Elaborating entity "nxor2_5bit" for hierarchy "MIPS_PROCESSOR:inst|HazardDetectionUnit:inst24|comp5:comparator1|nxor2_5bit:xor_gate"
+Info (12128): Elaborating entity "zerocomp5" for hierarchy "MIPS_PROCESSOR:inst|HazardDetectionUnit:inst24|zerocomp5:nonzero1"
+Warning (10036): Verilog HDL or VHDL warning at zerocomp5.vhd(12): object "gnd" assigned a value but never read
+Info (12128): Elaborating entity "IFID" for hierarchy "MIPS_PROCESSOR:inst|IFID:IF/ID"
+Warning (10541): VHDL Signal Declaration warning at IFID.vhd(13): used implicit default value for signal "o_ins" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "reg32" for hierarchy "MIPS_PROCESSOR:inst|IFID:IF/ID|reg32:pcreg"
+Info (12128): Elaborating entity "ROM256x32" for hierarchy "MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "ROM_CONTENTS -TEST PROGRAM.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_d7b1.tdf
+    Info (12023): Found entity 1: altsyncram_d7b1
+Info (12128): Elaborating entity "altsyncram_d7b1" for hierarchy "MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component|altsyncram_d7b1:auto_generated"
+Info (12128): Elaborating entity "reg32" for hierarchy "MIPS_PROCESSOR:inst|reg32:PCRegister"
+Info (12128): Elaborating entity "mux2x1_32bit" for hierarchy "MIPS_PROCESSOR:inst|mux2x1_32bit:JumpOrNot"
+Info (12128): Elaborating entity "comp32" for hierarchy "MIPS_PROCESSOR:inst|comp32:inst15"
+Info (12128): Elaborating entity "nxor2_32bit" for hierarchy "MIPS_PROCESSOR:inst|comp32:inst15|nxor2_32bit:xor_gate"
+Info (12128): Elaborating entity "REGISTER_FILE" for hierarchy "MIPS_PROCESSOR:inst|REGISTER_FILE:inst8"
+Info (12128): Elaborating entity "REGFILE_COMPONENT1" for hierarchy "MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "32"
+    Info (12134): Parameter "numwords_b" = "32"
+    Info (12134): Parameter "operation_mode" = "DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "widthad_b" = "5"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2fn1.tdf
+    Info (12023): Found entity 1: altsyncram_2fn1
+Info (12128): Elaborating entity "altsyncram_2fn1" for hierarchy "MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component|altsyncram_2fn1:auto_generated"
+Info (12128): Elaborating entity "ADDER32BITS_B" for hierarchy "MIPS_PROCESSOR:inst|ADDER32BITS_B:inst9"
+Info (12128): Elaborating entity "lpm_constant0" for hierarchy "MIPS_PROCESSOR:inst|lpm_constant0:inst2"
+Info (12128): Elaborating entity "lpm_constant0_lpm_constant_s09" for hierarchy "MIPS_PROCESSOR:inst|lpm_constant0:inst2|lpm_constant0_lpm_constant_s09:lpm_constant0_lpm_constant_s09_component"
+Info (12128): Elaborating entity "shl2" for hierarchy "MIPS_PROCESSOR:inst|shl2:ShiftLeft2"
+Info (12128): Elaborating entity "shl2extend" for hierarchy "MIPS_PROCESSOR:inst|shl2extend:ShiftLeftAndExtend2"
+Info (12128): Elaborating entity "signextend" for hierarchy "MIPS_PROCESSOR:inst|signextend:inst1"
+Info (12128): Elaborating entity "MIPS_ALU" for hierarchy "MIPS_PROCESSOR:inst|MIPS_ALU:inst"
+Warning (10541): VHDL Signal Declaration warning at MIPS_ALU.vhd(16): used implicit default value for signal "mux_slt" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "and2_32bit" for hierarchy "MIPS_PROCESSOR:inst|MIPS_ALU:inst|and2_32bit:and_unit"
+Info (12128): Elaborating entity "or2_32bit" for hierarchy "MIPS_PROCESSOR:inst|MIPS_ALU:inst|or2_32bit:or_unit"
+Info (12128): Elaborating entity "not_32bit" for hierarchy "MIPS_PROCESSOR:inst|MIPS_ALU:inst|not_32bit:not_unit"
+Info (12128): Elaborating entity "zerocomp32" for hierarchy "MIPS_PROCESSOR:inst|MIPS_ALU:inst|zerocomp32:zerocomp"
+Warning (10036): Verilog HDL or VHDL warning at zerocomp32.vhd(12): object "gnd" assigned a value but never read
+Info (12128): Elaborating entity "mux4x1_32bit" for hierarchy "MIPS_PROCESSOR:inst|MIPS_ALU:inst|mux4x1_32bit:mux"
+Info (12128): Elaborating entity "mux4x1_1bit" for hierarchy "MIPS_PROCESSOR:inst|MIPS_ALU:inst|mux4x1_32bit:mux|mux4x1_1bit:mux31"
+Info (12128): Elaborating entity "mux4x1_32bit" for hierarchy "MIPS_PROCESSOR:inst|mux4x1_32bit:ALU_AMux"
+Info (12128): Elaborating entity "ForwardingUnit" for hierarchy "MIPS_PROCESSOR:inst|ForwardingUnit:inst20"
+Warning (10541): VHDL Signal Declaration warning at ForwardingUnit.vhd(25): used implicit default value for signal "C1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at ForwardingUnit.vhd(25): used implicit default value for signal "C2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at ForwardingUnit.vhd(25): used implicit default value for signal "C3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at ForwardingUnit.vhd(25): used implicit default value for signal "C4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "mux4x1_2bit" for hierarchy "MIPS_PROCESSOR:inst|ForwardingUnit:inst20|mux4x1_2bit:fwdAmux"
+Info (12128): Elaborating entity "alu_controller" for hierarchy "MIPS_PROCESSOR:inst|alu_controller:inst13"
+Info (12128): Elaborating entity "mux2x1_5bit" for hierarchy "MIPS_PROCESSOR:inst|mux2x1_5bit:inst14"
+Info (12128): Elaborating entity "RAM256x32" for hierarchy "MIPS_PROCESSOR:inst|RAM256x32:inst5"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "RAM_CONTENTS.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_a6i1.tdf
+    Info (12023): Found entity 1: altsyncram_a6i1
+Info (12128): Elaborating entity "altsyncram_a6i1" for hierarchy "MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component|altsyncram_a6i1:auto_generated"
+Info (12128): Elaborating entity "mux8x1_8bit" for hierarchy "MIPS_PROCESSOR:inst|mux8x1_8bit:OutputMultiplexor"
+Info (12128): Elaborating entity "mux8x1_1bit" for hierarchy "MIPS_PROCESSOR:inst|mux8x1_8bit:OutputMultiplexor|mux8x1_1bit:mux7"
+Info (12128): Elaborating entity "lpm_constant2" for hierarchy "MIPS_PROCESSOR:inst|lpm_constant2:inst16"
+Info (12128): Elaborating entity "lpm_constant2_lpm_constant_r09" for hierarchy "MIPS_PROCESSOR:inst|lpm_constant2:inst16|lpm_constant2_lpm_constant_r09:lpm_constant2_lpm_constant_r09_component"
+Error (12012): Port direction mismatch for entity "MIPS_PROCESSOR:inst|HazardDetectionUnit:inst24|comp5:comparator1" at port "comp_output".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Ivor/Documents/mips32/HazardDetectionUnit.vhd Line: 43
+Error (12012): Port direction mismatch for entity "MIPS_PROCESSOR:inst|HazardDetectionUnit:inst24|comp5:comparator1" at port "comp_output".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Ivor/Documents/mips32/HazardDetectionUnit.vhd Line: 43
+Error (12012): Port direction mismatch for entity "MIPS_PROCESSOR:inst|HazardDetectionUnit:inst24|comp5:comparator1" at port "comp_output".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Ivor/Documents/mips32/HazardDetectionUnit.vhd Line: 43
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 23 warnings
+    Error: Peak virtual memory: 520 megabytes
+    Error: Processing ended: Wed Apr 11 11:06:47 2018
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:08
 
 

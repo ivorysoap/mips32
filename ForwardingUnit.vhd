@@ -28,7 +28,7 @@ signal outA, outB : std_logic_vector(1 downto 0);
 component comp5
 	port(	a 		: std_logic_vector(4 downto 0);
 			b 		: std_logic_vector(4 downto 0);
-			same	: std_logic);
+			comp_output	: std_logic);
 end component;
 
 component zerocomp5
@@ -51,8 +51,7 @@ begin
 	D <= (MWBRegWrite and NZ2) and C4;
 	
 	--Port Map
-	comparator1 : comp5 port map(EXMrd, IDEXrt, C1);
-	comparator2 : comp5 port map(MWBrd, IDEXrs, C2);
+ 	comparator2 : comp5 port map(MWBrd, IDEXrs, C2);
 	comparator3 : comp5 port map(IDEXrs, EXMrd, C3);
 	comparator4 : comp5 port map(MWBrd, IDEXrt, C4);
 	nonzero1		: zerocomp5 port map(EXMrd, NZ1);

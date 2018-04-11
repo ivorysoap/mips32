@@ -1,5 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CEG3556-L3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|TOP|MIPS_PROCESSOR:inst|RAM256x32:inst5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_a6i1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|TOP|MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_2fn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|TOP|MIPS_PROCESSOR:inst|REGISTER_FILE:inst8|REGFILE_COMPONENT1:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_2fn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|TOP|MIPS_PROCESSOR:inst|ROM256x32:INSTRUCTION_MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_d7b1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
