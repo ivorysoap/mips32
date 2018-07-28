@@ -9,4 +9,4 @@ I'm not actively maintaining this project at this time.
 
 ![Less detailed block diagram of the processor.  This shows the hazard detection and forwarding units.](https://raw.githubusercontent.com/ivorysoap/mips32/master/hdu_fu_datapath.png)
 
-*Images from taken from *Computer Organization and Design: the Hardware/Software Interface* (Patterson, Hennesy)*
+*Images from taken from *Computer Organization and Design: the Hardware/Software Interface* (Patterson, Hennessy)*
