@@ -1,5 +1,5 @@
 # mips32
-This is an implementation of the 32-bit MIPS pipelined microcontroller.  It features a five-stage instruction pipeline, 1KB instruction and data memories, a forwarding unit, and a hazard detection unit.  This was designed using VHDL and Quartus II's native block diagrams, and was originally designed to run on an ALTERA DE2-115 development board.
+This is an implementation of the 32-bit MIPS pipelined microcontroller, described using VHDL and designed to run on an Altera DE2-115 FPGA.  It features a five-stage instruction pipeline, 1KB instruction and data memories, a data forwarding unit, and a hazard detection/avoidance unit.
 
 I'm not actively maintaining this project at this time.
 
