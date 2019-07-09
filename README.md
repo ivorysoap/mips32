@@ -1,12 +1,8 @@
-# mips32
-This is an implementation of the 32-bit MIPS pipelined microcontroller, described using VHDL and designed to run on an Altera DE2-115 FPGA.  It features a five-stage instruction pipeline, 1KB instruction and data memories, a data forwarding unit, and a hazard detection/avoidance unit.
+# IEEE_LED_Sign
+Material for an LED sign for the IEEE uOttawa office.  
 
-I'm not actively maintaining this project at this time.
+When the door is open (meaning someone's in the office), the sign blinks out "IEEE" in morse code in blue.  When the door is closed, the lights stay off.  I made this with [@PirateRoberts98](https://github.com/PirateRoberts98) using some LED strips, an Arduino Nano, a relay, a magnetic reed switch, and copious amounts of solder.
 
-## Block diagrams
+## Wiring diagram
 
-![Full block diagram of the processor](https://raw.githubusercontent.com/ivorysoap/mips32/master/full_datapath.png)
-
-![Less detailed block diagram of the processor.  This shows the hazard detection and forwarding units.](https://raw.githubusercontent.com/ivorysoap/mips32/master/hdu_fu_datapath.png)
-
-*Images from taken from *Computer Organization and Design: the Hardware/Software Interface* (Patterson, Hennessy)*
+![Schematic](ieee_sign_schematic.png)
