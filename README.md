@@ -1,5 +1,5 @@
 # mips32
-## Overview
+
 This is an implementation of a 32-bit MIPS pipelined microprocessor, implemented in VHDL using Quartus II.  Originally, it was designed to run on an Altera DE2-115 FPGA.  It features a five-stage instruction pipeline, 1KB instruction and data memories, a data forwarding unit, and a hazard detection/avoidance unit.
 
 I'm not actively maintaining this project at this time.
