@@ -18,7 +18,7 @@ The vast majority of this was written in VHDL, but I did the top layer in the Qu
 
 
 
-These last two block diagrams are fromthe textbook *Computer Organization and Design: the Hardware/Software Interface* (Patterson, Hennessy) and show what a MIPS processor typically looks like:
+These last two block diagrams are from the textbook *Computer Organization and Design: the Hardware/Software Interface* (Patterson, Hennessy) and are slightly easier-to-read examples of what a MIPS processor typically looks like:
 
 Full block diagram of the MIPS processor, with the data path shown in black and the control path & control modules shown in blue.
 
